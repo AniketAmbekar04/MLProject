@@ -17,7 +17,7 @@ model = LogisticRegression()
 model.fit(X_train, y_train)
 
 # Save the model to a file
-with open('trained_models.pkl', 'wb') as file:
+with open('model.pkl', 'wb') as file:
     pickle.dump(model, file)
 
 print("Model saved successfully as model.pkl")
